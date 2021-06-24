@@ -1,6 +1,10 @@
+import { Button } from './components/Button'
+//exemplo de uso da propriedade children  <Button>clique aqui</Button>
 function App() {
   return (
-    <h1>Hello world</h1>
+    <div>
+      <Button />
+    </div>
   );
 }
 
