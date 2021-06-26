@@ -7,7 +7,7 @@
 import { ButtonHTMLAttributes } from 'react'
 
 import '../styles/button.scss';
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;//para que sejam aceitos todas as propriedades que um botão pode receber 
 
 export function Button(props: ButtonProps){
     //let counter = 0; - o react não vai pegar a mudança da variavel
