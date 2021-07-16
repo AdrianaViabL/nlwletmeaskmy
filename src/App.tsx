@@ -5,6 +5,7 @@ import { Room } from './pages/Room';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //Switch - faz com que não apareça duas rotas ao mesmo tempo quando o site é renderizado
 import { AuthContextProvider} from './contexts/AuthContext'
+import { AdminRoom } from './pages/AdminRoom';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" exact component={ Home }/>
         <Route path="/rooms/new" component={ NewRoom }/>
         <Route path="/rooms/:id" component={ Room }/>
+        <Route path="/admin/rooms/:id" component={ AdminRoom }/>
       </Switch>
     </AuthContextProvider>
     </BrowserRouter>
